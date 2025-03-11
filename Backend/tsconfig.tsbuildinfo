@@ -1,0 +1,1 @@
+{"root":["./src/globalvars.ts","./src/index.ts","./src/functions/orderrelated.ts","./src/routes/ordersroutes.ts","./src/routes/userroutes.ts","./src/types/types.ts","./src/utils/tickers.ts"],"version":"5.7.3"}
