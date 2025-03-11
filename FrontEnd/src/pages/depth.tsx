@@ -45,7 +45,7 @@ function DepthComp() {
   async function fetchDepth() {
     setIsRefreshing(true)
     try {
-      const resp = await axios.get("http://localhost:3000/api/depth")
+      const resp = await axios.get("https://marketdepth.duckdns.org/api/depth")
       setDepth(resp.data)
     } catch (error) {
       console.error("Error fetching depth data:", error)
@@ -65,7 +65,7 @@ function DepthComp() {
     setIsLoading(true)
 
     try {
-      const resp = await axios.post("http://localhost:3000/api/order", {
+      const resp = await axios.post("https://marketdepth.duckdns.org/api/order", {
         userId,
         side: mode ? "bid" : "ask",
         price: order.price,

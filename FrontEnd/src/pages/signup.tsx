@@ -18,7 +18,7 @@ function SignUp() {
 
   async function handleSubmit() {
     try {
-      const resp = await axios.post("http://localhost:3000/user/signup/", {
+      const resp = await axios.post("https://marketdepth.duckdns.org/user/signup/", {
         email: userCred.email,
         password: userCred.password,
       })
