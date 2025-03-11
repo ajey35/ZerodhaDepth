@@ -26,6 +26,7 @@ function SignUp() {
       localStorage.setItem("id", data.id)
       navigate("/depth")
     } catch (error) {
+       alert("Invalid Credentials!")
       console.error("Authentication error:", error)
     }
   }
